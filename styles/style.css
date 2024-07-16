@@ -193,6 +193,36 @@ header {
   font-size: 1rem;
   font-weight: 700;
 }
+
+/* Footer style */
+.footer {
+  max-width: 1440px;
+  height: 306px;
+  background-color: rgb(10, 8, 38);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text {
+  width: 262px;
+  height: 139px;
+}
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  /* full text in one line */
+  white-space: nowrap;
+}
+.footer-text a {
+  margin-left: 16px;
+
+}
+
 /* Responsive design start  */
 /* Mobile device */
 @media screen and (max-width: 576px) {
