@@ -57,7 +57,7 @@ header {
   gap: 133px;
 }
 .banner-text {
-  width: 582px;
+  max-width: 582px;
   height: 270px;
 }
 .banner-title {
@@ -72,12 +72,12 @@ header {
 
 .banner-img {
   background-image: url("../images/Circle-design.svg");
-  width: 475px;
+  max-width: 475px;
   height: 475px;
 }
 .banner-img img {
-  width: 440px;
-  height: 414px;
+  width: 100%;
+  height: auto;
 }
 /* company logo styles */
 .companys {
@@ -108,7 +108,7 @@ header {
   margin-bottom: 50px;
 }
 .popular-card {
-  width: 329px;
+  max-width: 329px;
   height: 476px;
   border-radius: 5px;
   padding: 16px 14px;
@@ -197,6 +197,7 @@ header {
 /* Footer style */
 .footer {
   max-width: 1440px;
+  margin: 0 auto;
   height: 306px;
   background-color: rgb(10, 8, 38);
   color: rgb(255, 255, 255);
@@ -220,7 +221,6 @@ header {
 }
 .footer-text a {
   margin-left: 16px;
-
 }
 
 /* Responsive design start  */
@@ -236,5 +236,43 @@ header {
   }
   .brand {
     padding: 0px;
+  }
+  .banner-section,
+  .feature-section {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .banner-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  .banner-text {
+    order: 2;
+  }
+  .banner-subtitle {
+    font-size: 0.8rem;
+  }
+  .banner-img img {
+    margin-top: 10px;
+    order: 1;
+  }
+  .banner-img {
+    background-image: none;
+  }
+  .companys {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .popular-collection-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .feature-text-title {
+    font-size: 25px;
+    /* full text in one line */
+    white-space: wrap;
   }
 }
